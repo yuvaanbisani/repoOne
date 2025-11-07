@@ -1,0 +1,74 @@
+#exam elligibility
+fit = input("Are you medically fit for the exams? (yes/no): ").strip().lower()
+attendance = float(input("Enter your attendance percentage: "))
+if fit == "y":
+    if attendance >= 75:
+        print("You are elligible to sit for the exams.")
+    else:
+        print("You are not elligible due to insufficient attendance.")
+else:
+    print("You are not elligible due to medical unfitness.")
+if attendance <= 75 and fit != "y":
+    print("You are not elligible due to both medical unfitness and insufficient attendance.")
+
+
+"""electricity bill     
+
+
+<50 units = 2.60 rupees,tax = 25
+>50 units and <100 = 3.25 rupees,tax = 35
+>100 units and less than 200 = 5.25 rupees, tax = 45
+>200 units = 6.25 rupees, tax = 55
+"""
+units = int(input("Enter the number of units consumed : "))
+if units < 50:
+    bill = (units * 2.60) + 25
+    print("Your electricity bill is:", bill)
+elif units >= 50 and units < 100:
+    bill = (units * 3.25) + 35
+    print("Your electricity bill is:", bill)
+elif units >= 100 and units < 200:
+    bill = (units * 5.25) + 45
+    print("Your electricity bill is:", bill)
+elif units >= 200:
+    bill = (units * 6.25) + 55
+    print("Your electricity bill is:", bill)
+else:
+    print("Invalid input for units consumed.")
+
+#customizable ride
+print("Select your ride!")
+ride = int(input("1. Bike\n2. Car\n Enter your choice (1 or 2) : "))
+if ride == 1:
+    bikechoice = (int(input("Select your bike type:\n1. Bullet\n2. Ather\n Enter your choice (1 or 2) : ")))
+    if bikechoice == 1:
+        print("You have selected Bullet bike.")
+    elif bikechoice == 2:
+        print("You have selected Ather bike.")
+    else:
+        print("Invalid bike choice.")
+elif ride == 2:
+    carchoice = (int(input("Select your car type:\n1. XUV\n2. Sedan\n Enter your choice (1 or 2) : ")))
+    if carchoice == 1:
+        print("You have selected XUV car.")
+    elif carchoice == 2:
+        print("You have selected Sedan car.")
+    else:
+        print("Invalid car choice.")
+else:
+    print("Invalid ride choice.")
+
+#negative positive odd evem
+num = int(input("Input a number : "))
+if num == 0:
+    print("The number is zero.")
+elif num > 0:
+    if num % 2 == 0:
+        print("The number is positive even.")
+    else:
+        print("The number is positive odd.")
+elif num < 0:
+    if num % 2 == 0:
+        print("The number is negative even.")
+    else:
+        print("The number is negative odd.")
