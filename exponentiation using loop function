@@ -1,0 +1,6 @@
+#exponentiation using loop
+number = (int(input("Enter a number : ")))
+power = (int(input("Enter the power to which the number is to be raised : ")))
+for i in range(0, power, 1):
+    number = number + number
+    print(i+1,"The given number raised to the power of another number is : ", number)
