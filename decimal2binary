@@ -1,10 +1,10 @@
 # Decimal to Binary Conversion using Nested Loops
-n = int(input("Enter a number: "))
-binary = "0"
-while n > 0:
-    if n == 0:
-        break
-    remainder = n % 2
-    binary = str(remainder) + binary
-    n = n // 2
-print("The binary representation is :", binary)
+num = int(input("Enter a decimal number: "))
+binary = ""
+
+while num > 0:
+    for _ in range(1):
+        remainder = num % 2
+        binary = str(remainder) + binary
+        num = num // 2
+print(f"{binary} is the binary equivalent.")
