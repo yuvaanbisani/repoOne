@@ -1,0 +1,10 @@
+# Decimal to Binary Conversion using Nested Loops
+n = int(input("Enter a number: "))
+binary = "0"
+while n > 0:
+    if n == 0:
+        break
+    remainder = n % 2
+    binary = str(remainder) + binary
+    n = n // 2
+print("The binary representation is :", binary)
