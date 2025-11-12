@@ -1,0 +1,8 @@
+# counting the number of digits in a number
+num = (int(input("Enter a number : ")))
+while num > 0:
+    digit = num % 10
+    num = num // 10
+    numofdigits = numofdigits + 1 if 'numofdigits' in locals() else 1
+print("the number of digits is :", numofdigits)
+    
