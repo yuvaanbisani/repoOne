@@ -1,0 +1,37 @@
+print("*"*5)
+for i in range(9):
+    print("~")
+for i in range(6):
+    print("~ ", end ="")
+for i in range(4):
+    for j in range(5):
+        print("~", end = "")
+    print("|")
+# activity1
+print("Half pyramid at a pattern")
+n = int(input("Enter the number of rows"))
+for i in range(n):
+    for j in range(i + 1):
+        print("[]", end = "")
+    print()
+# FLOYD triangle???
+n = int(input("enter num of rows : "))
+number = 1
+print("floyds triangle")
+for i in range(1, n+1):
+    for j in range(1, i+1):
+        print(number, end = " ")
+        number = number + 1
+    print()
+# DIAmond pattern???????!!!!!
+rowsize = int(input("enter num of rows : "))
+for i in range(1, rowsize+1, 2):
+    print(""*  ((rowsize-i)//2), end := "")
+    for j in range(1, i+1):
+        print(j, end = "")
+    print()
+for i in range(rowsize - 2, 0, -2):
+    print(""*((rowsize - i)//2), end = "")
+    for j in range(1, i + 1):
+        print(j, end = "")
+    print()
