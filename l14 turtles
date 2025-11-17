@@ -1,0 +1,30 @@
+#polygon
+import turtle
+turtle.Screen().bgcolor("orange")
+turtle.Screen().setup(500, 500)
+polygon = turtle.Turtle()
+sides = 25
+length = 1
+angle = 360/sides
+polygon.color("red")
+polygon.pensize(10)
+for i in range(sides):
+    polygon.forward(sides)
+    polygon.right(angle)
+#star
+for i in range(0,5):
+    turtle.forward(100)
+    turtle.left(576)
+#spiral
+spiral = turtle.Screen()
+spiral.bgcolor("orange")
+spiral.title("Turtle")
+spiral = turtle.Turtle()
+size = 0
+for i in range(10):
+    for i in range(10):
+        spiral.fd(size + 1)
+        spiral.left(60)
+        size = size - 5
+    size = size + 1
+turtle.done()
