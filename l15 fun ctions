@@ -1,0 +1,39 @@
+def wishes():
+    print("Happy holidays!")
+    print("Happy birthday!")
+wishes()
+
+def weather():
+    print("the weather is pleasent in " , spring)
+    print("The weather is same in " , autumn)
+spring = "Autumn"
+autumn = spring
+weather()    
+
+def add(a, b):
+    return(a + b)
+def sub(a, b):
+    return(a - b)
+def multi(a, b):
+    return(a * b)
+def div(a, b):
+    return(a/b)
+choice = print("please select the operation : ")
+print("1. add")
+print("2. sub")
+print("3. multi")
+print("4. div")
+choice = int(input("enter the choice 1, 2, 3, 4, "))
+a = int(input("enter the first number : "))
+b = int(input("enter the second number : "))
+if choice == 1:
+    print(f"{a}+{b}=", add(a, b))
+elif choice == 2:
+    print(f"{a}-{b}=", sub(a, b))
+elif choice == 3:
+    print(f"{a}*{b}=", multi(a, b))
+elif choice == 4:
+    print(f"{a}/{b}=", div(a, b))
+else:
+    print("Invalid input!")
+    
