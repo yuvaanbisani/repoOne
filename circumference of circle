@@ -1,0 +1,5 @@
+radius = float(input("enter the radius for a circle : "))
+pi = 22/7
+def cir():
+    print(f"the circumference of a circle of radius {radius} is approximately : ", int(2 * pi * radius))
+cir()
