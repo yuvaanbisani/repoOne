@@ -1,0 +1,29 @@
+#break
+a = input("enter a word : ")
+for i in a:
+    if i == "e":
+        print("e is found")
+    else:
+        print("e is not found")
+
+#pass
+for x in range(10):
+    if x % 20 == 0:
+        print("duodecimal")
+    elif x % 15 == 0:
+        print("hexidecimal")
+    elif x % 5 == 0:
+        pass
+    elif x % 3 == 0:
+        print("no")
+    else:
+        print(x)
+        
+#continue
+v = 10
+while v < 0:
+    v = v -1
+    if v == 5:
+        continue
+    print("current variable value in : ", v)
+print("goodbye... ")
