@@ -1,10 +1,11 @@
 # Decimal to Binary Conversion using Nested Loops
 num = int(input("Enter a decimal number: "))
 binary = ""
+remainder = 0
 
 while num > 0:
     for i in range(1):
-        i = num % 2
+        remainder = num % 2
         binary = str(remainder) + binary
         num = num // 2
-    print(f"{binary} is the binary equivalent.")
+    print(binary)
