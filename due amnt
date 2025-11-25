@@ -1,11 +1,11 @@
 f change(bill, paid):
     bill = float(bill)
     paid = float(paid)
-    change = bill - paid
+    change = paid - bill
     if change < 0:
         print("ERROR! Insufficient funds. ")
     elif change == bill:
         return("0")
     else:
         print(change)
-change(4.00, 2.50)  #input any int in here. i just did what the description asked for.
+change(2.500, 4.00)  #input any int in here. i just did what the description asked for.
