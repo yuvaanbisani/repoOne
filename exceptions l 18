@@ -1,0 +1,44 @@
+#value error
+try:
+    num = int(input("enter a number : "))
+    print("the number entered is :", num)
+except ValueError as ex:
+    print("exception", ex)
+
+#oops! all ERRORS!
+try:
+    num1, num2 = eval(input("enter two numbers seperated BY A !!!!!!!COMMA!!!!!!! : "))
+    result = num1 / num2
+    print("the result is : ", result)
+except ZeroDivisionError as div0:
+    print(div0)
+except SyntaxError as syn:
+    print("you are missing a comma. you got this by seperating the two numbers by a space, dont do that.", syn)
+except:
+    print("WrongInput !!!!!!!!!!")
+else:
+    print("No exceptions :)))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))")
+finally:
+    print("this will excecute no matter what, even in the toughest of times, ths will still trigger. be strong soldier.")
+    
+#bye bye :)))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))(((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((99)))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
+valid = False
+while not valid:
+    try:
+        n = int(input("enter a number : "))
+        if n % 2 == 0:
+            print("the number is even")
+        else:
+            print("thats a n odd number")
+            valid = True
+    except ValueError:
+        print("invalid pl s enter a n odd number")
+
+#hehe
+try:
+    print(x)
+except:
+    print("SOMETHING WNT WRONG!!!")
+finally:
+    print("the try and except is finished, finally.")
+print()
