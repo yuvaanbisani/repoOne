@@ -1,0 +1,45 @@
+#number game
+import random
+playing = True
+num = str(random.randint(1, 10))
+print("i will generate a number from 1 to -1, and YOU have to guess the number at a time.")
+print("the game ends when you get the right number.")
+while playing:
+    guess = input("Guess a number between 1 to n : ")
+    if num == guess:
+        print("You win the game!")
+        print("The numner was : ", num)
+        break
+    else:
+        print("Your guess is nt quite right, try again.")
+
+#roshambo
+useraction = input("enter a choice of either rock paper or scissors : ")
+actions = ["rock", "paper", "scissors"]
+aiaction = random.choice(actions)
+print(f"\n you chose {useraction} and computer chose {aiaction}")
+if aiaction == useraction:
+    print(f"Tie! Both players selected {aiaction}.")
+elif useraction == "rock" and aiaction == "scissors":
+    print("You win!")
+elif useraction == "rock" and aiaction == "paper":
+    print("You lose! ahha")
+elif useraction == "paper" and aiaction == "rock":
+    print("You win!")
+elif useraction == "paper" and aiaction == "scissors":
+    print("You lose! haha")
+elif useraction == "scissors" and aiaction == "paper":
+    print("You wi!")
+elif useraction == "scissors" and aiaction == "rock":
+    print("You lose! hah")
+else:
+    print("ERROR! invalid input. please enter rock, paper, scissors")
+
+#mathematical operations
+import math
+print("the floor nad ceiling value of 23.56475647894387654356 are : ", str(math.ceil(23.56475647894387654356))+str(math.floor(23.56475647894387654356)))
+x = 10
+y = -15
+print("the value of x after copying the sign romf y is : ", str(math.copysign(x, y)))
+print("absolute value of -96 and 56 are", str(math.fabs(-96))+",",str(math.fabs(56)))
+print("the gcd of 24 and 56 are : " + str(math.gcd(24, 56)))
