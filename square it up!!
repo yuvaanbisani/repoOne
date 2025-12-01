@@ -1,0 +1,12 @@
+start = int(input("Enter the starting number: "))
+end = int(input("Enter the ending number: "))
+squared_numbers = []
+for num in range(start, end + 1):
+    squared_numbers.append(num ** 2)
+print("Squared numbers from", start, "to", end, "are:", squared_numbers)
+for i in squared_numbers:
+    i = squared_numbers.index(i)
+    if i % 2 == 0:
+        print("Index", i, "is odd.")
+    elif i % 2 != 0:
+        print("Index", i, "is even.")
