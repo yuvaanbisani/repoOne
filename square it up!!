@@ -7,6 +7,6 @@ print("Squared numbers from", start, "to", end, "are:", squared_numbers)
 for i in squared_numbers:
     i = squared_numbers.index(i)
     if i % 2 == 0:
-        print("Index", i, "is odd.")
-    elif i % 2 != 0:
         print("Index", i, "is even.")
+    elif i % 2 != 0:
+        print("Index", i, "is odd.")
