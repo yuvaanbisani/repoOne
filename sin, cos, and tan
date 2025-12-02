@@ -7,9 +7,9 @@ sine(5, 13)
 def cosine(a, h):
     costheta = a / h
     print(f"Cosine of angle with adjacent side {a} and hypotenuse {h} is: {costheta}")
-sine(12, 13)
+cosine(12, 13)
 
 def tangent(o, a):
     tantheta = o / a
     print(f"Tangent of angle with opposite side {o} and adjacent side {a} is: {tantheta}")
-sine(5, 12)
+tangent(5, 12)
