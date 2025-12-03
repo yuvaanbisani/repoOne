@@ -1,0 +1,32 @@
+#empty list
+emptylist = []
+print(emptylist)
+numbers=[1,2,3,4,5]
+print(numbers)
+triples = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]*3
+print(triples)
+reversedlist = triples[::-1]
+print(reversedlist)
+
+#word matching
+def matchwords(words):
+    ctr = 0
+    list = []
+    for word in words:
+        if len(word) > 1 and word[0] == word[-1]:
+            ctr += 1
+            list.append(word)
+    print("number of words matching criteria:", ctr)
+ctr = matchwords(['abc', 'xyz', 'aba', '420024', "1221", "adam", "madam", "python andna nohtyp" ])
+print(ctr)
+print(list)
+
+#play with lists
+list5 = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+print("original list:", list5)
+count = 0
+for i in list5:
+    count += i
+avg = count/len(list5)
+print(count)
+print("average is:", avg)
